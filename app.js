@@ -213,6 +213,7 @@ function openModal() {
   modal.style.display = "flex";
   modalInput.value = "";
   modalInput.focus();
+  modalInput.setAttribute('autocomplete', 'off');
 }
 
 function closeModal() {

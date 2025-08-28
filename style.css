@@ -89,8 +89,8 @@ h1, h2 {
 }
 
 .card.selected {
-  outline: 3px solid gold;
-  box-shadow: 0 0 10px gold;
+  outline: 1px solid rgb(183 145 27);
+  box-shadow: 0 0 10px rgb(183 145 27);
 }
 
 .controls {
@@ -101,6 +101,7 @@ button {
     margin: 0.5rem;
     padding: 0.75rem 1.25rem;
     border: none;
+    outline: none;
     background-color: #cabaa2;
     color: #1e1e2f;
     font-family: 'Cormorant Unicase', serif;
@@ -118,9 +119,16 @@ button:hover {
   width: 90%;
   border: none;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   background: transparent;
-  color: #f1ebdf;
+  font-family: "Jacquard 24 Charted", serif;
+}
+
+.card input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgb(183 145 27);
+  color: inherit;
+
 }
 
 
@@ -139,7 +147,7 @@ button:hover {
 .modal-content {
   background: #2a2a40;
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: 3px;
   text-align: center;
   color: #f1ebdf;
   width: 300px;
@@ -152,11 +160,12 @@ button:hover {
 .modal-content input {
   width: 90%;
   padding: 0.5rem;
-  border-radius: 6px;
+  outline: none;
   border: none;
   margin-bottom: 1rem;
   font-size: 1rem;
   text-align: center;
+  font-family: "Jacquard 24 Charted", serif;
 }
 
 .modal-buttons {
