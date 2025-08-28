@@ -1,0 +1,209 @@
+/* ===== Font ===== */
+h1, h2, h3, h4, h5, h6, .card {
+    font-family: "Jacquard 24 Charted", serif;
+    font-weight: normal;
+}
+
+h1 { font-size: 4em; }
+h2 { font-size: 3em; }
+h3 { font-size: 2em; }
+
+body {
+    font-family: 'Cormorant Unicase', serif;
+    background: radial-gradient(circle at top left, #2a2a40, #1e1e2f);
+    background: #2a3338 url("assets/Sapho_jouant_de_la_Lyre_small.jpg") no-repeat left fixed;
+
+    color: #f8f8f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ===== Game Elements ===== */
+h1, h2 {
+  margin-top: 1rem;
+}
+
+#cue {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  font-weight: bold;
+  color: rgb(183 145 27);
+}
+
+#starter-screen {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#starter-decks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    justify-content: center;
+
+  gap: 1rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.discard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  opacity: 50%;
+}
+
+.card {
+    background: linear-gradient(145deg, #f1ebdf, #a5a397);
+    border: 0.5px solid #1e1e2f;
+    border-radius: 2px;
+    margin: .5rem 0;
+    text-align: center;
+    color: #1e2d39;
+    font-size: 2em;
+    height: 210px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.6);
+    transition: transform 0.2s, box-shadow 0.2s;
+    user-select: none;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.selected {
+  outline: 3px solid gold;
+  box-shadow: 0 0 10px gold;
+}
+
+.controls {
+  margin: 2rem 0;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    background-color: #cabaa2;
+    color: #1e1e2f;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #666688;
+}
+
+.card input {
+  width: 90%;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  background: transparent;
+  color: #f1ebdf;
+}
+
+
+/* ===== Modal Styling ===== */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #2a2a40;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #f1ebdf;
+  width: 300px;
+}
+
+.modal-content h3 {
+  margin-bottom: 1rem;
+}
+
+.modal-content input {
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  flex: 1;
+  margin: 0.25rem;
+}
+
+
+/* ===== Card Backgrounds ===== */
+.cerulean {
+    background: url('assets/cerulean.jpg') center no-repeat; 
+    background-size: cover;
+    color: #1e2d39;
+
+}
+
+.garnet {
+    background: url('assets/garnet.jpg') center no-repeat; 
+    background-size: cover;
+    color: #f1ebdf;
+}
+
+.opal {
+    background: url('assets/opal.jpg') center no-repeat; 
+    background-size: cover;
+    color: #1e2d39;
+}
+
+.viridian {
+    background: url('assets/viridian.jpg') center no-repeat; 
+    background-size: cover;
+    color: #f1ebdf;
+}
+
+.ashes {
+    background: url('assets/ashes.jpg') center no-repeat; 
+    background-size: cover;
+    color: #f1ebdf;
+}
+
+.lace {
+    background: url('assets/lace.jpg') center no-repeat; 
+    background-size: cover;
+    color: #1e2d39;
+}
