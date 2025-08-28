@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play the Lyre</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Jacquard+24+Charted&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <h1>Play the Lyre</h1>
+
+    <!-- Starter Deck Selection -->
+    <div id="starter-screen">
+      <h2>Choose a Starter Deck</h2>
+      <div id="starter-decks"></div>
+    </div>
+
+    <!-- Main Game UI (hidden until starter is chosen) -->
+    <div id="game-ui" style="display:none;">
+      <h3 id="deck-header"></h3>
+
+      <!-- Cue / Turn Display -->
+      <div id="cue"></div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button id="next-turn">Next Turn</button>
+        <button id="add-card">Add a Card</button>
+        <button id="confirm-action">Confirm</button>
+      </div>
+
+      <!-- Active Hand -->
+      <h2>Your Hand</h2>
+      <div id="hand" class="card-container"></div>
+
+      <!-- Discard Pile -->
+      <h3>Discard Pile</h3>
+      <div id="discard" class="discard-container"></div>
+
+
+    </div>
+  </div>
+
+  <!-- Modal for custom card -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h3>Add a Card</h3>
+      <input type="text" id="modal-input" placeholder="Enter a word for your new card" />
+      <div class="modal-buttons">
+        <button id="modal-confirm">Add</button>
+        <button id="modal-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
